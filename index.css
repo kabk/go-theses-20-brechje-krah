@@ -1,0 +1,247 @@
+*,
+*:before,
+*:after {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body, html {
+    height: 100%;
+    width: 100%;
+    color: rgb(0);
+    background-color: rgb(255,255,255);
+    overflow-y: hidden;
+}
+
+pre {
+  font-family: sergio;
+  font-size: 90px;
+  text-align: left;
+  padding-left: 10px;
+
+
+}
+
+/*
+}
+
+div.scrollmenu 1 {
+    background-color: rgb(255);
+    overflow: hidden;
+    white-space: nowrap;
+    padding-top: 0px;
+    font: times;
+    position: fixed;
+    left: 700px;
+}
+
+div.scrollmenu 2 {
+    display: inline-block;
+    color: rgb(0,0,255);
+    padding: 10px;
+    font: times;
+    text-decoration: none;
+}
+
+div.scrollmenu a:hover {
+    background-color: rgb(0,0,255);
+}
+
+
+/* SCROLLING PANE START */
+
+/* hide the scrollbars */
+::-webkit-scrollbar {
+    display: block;
+    color: rgb(255,255,255);
+}
+
+#headers {
+  white-space:nowrap;
+}
+
+#header {
+  color: rgb(0,0,255);
+  font-size: 80px;
+  font: sergio-trial.otf;
+  text-align: left;
+  padding-left: -200px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  margin-left: 10px;
+  margin-top: 10px;
+  background-color: white;
+  border: 1px solid black;
+  border-radius: 600px;
+  border-spacing: 5px;
+  width: 600px;
+  height: 150px;
+  overflow: hidden;
+}
+
+#header2{
+  color: rgb(0,0,255);
+  position: absolute;
+  font-size: 80px;
+  font: sergio-trial.otf;
+  text-align: center;
+  padding-left: -100px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  margin-left: 950px;
+  margin-top: 400px;
+  background-color: white;
+  border: 1px solid black;
+  border-radius: 400px;
+  border-spacing: 0px;
+  width: 480px;
+  height: 150px;
+  overflow: hidden;
+}
+
+#scroll2 {
+  white-space: nowrap;
+}
+
+.scrolling-pane {
+  display: inline-block;
+  /* vertical-align: top; */
+  position:absolute;
+  top:0;
+  height: 75%;
+  width: 600px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  margin-left: 900px;
+  margin-right: -40px;
+  /* margin-top: -600px; */
+  margin-bottom: 800px;
+  overflow: scroll;
+  white-space: normal;
+}
+
+/* SCROLLING PANE END */
+
+.white-color {
+  background-color: rgb(0);
+  outline: 0px;
+  outline-style: solid;
+  outline-color: rgb(255,255,255);
+}
+
+.secondwhite-color {
+  background-color: rgb(0);
+  outline: 0px;
+  outline-style: solid;
+  outline-color: rgb(255,255,255);
+}
+
+
+.dummy-content {
+  width: 80%;
+  margin: 10px auto;
+  background-color: rgb(255);
+  border-bottom: 1px solid white;
+  border-top: 1px solid white;
+  border-left: 1px solid white;
+  border-right: 1px solid white;
+  font: times;
+  font-size: 14px;
+  font-family: helvetica;
+  text-align: left;
+  padding: 15px;
+/*  text-indent: 10px;
+*/}
+
+.dummy-content img{
+  width:100%;
+
+}
+
+.text-content {
+  margin-top: 20px;
+}
+
+
+/* menu */
+ul {
+  list-style: none;
+}
+
+.menu-item {
+    background-color: black;
+    float: left;
+}
+
+.popup-item:hover {
+  cursor: pointer;
+  color: white;
+}
+
+/* specific location for the popups */
+
+#popup-glacier {
+  top: 30px;
+  left: 300px;
+}
+
+
+
+/* popup styling */
+
+.popup {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0px;
+  left: 0px;
+  display: none;
+  z-index: 1 !important;
+  font-family: 'FGroteskDemi-Regular';
+  font-size: 15px;
+}
+
+.popup img {
+  position: absolute;
+  top:4%;
+  height: 92%;
+  z-index: 20;
+  transform: translateX(-50%);
+  left: 50%;
+}
+
+.popup .bg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  opacity: 0.8;
+  z-index: 10;
+}
+
+.info {
+  width: 50%;
+}
+
+.popup h1 {
+}
+
+.popup p {
+}
+
+.popup .artwork {
+  width: 100%;
+}
+
+/*
+.close-button {
+  width: 10px;
+  height: 10px;
+  position: absolute;
+  right: 5px;
+  top: 5px;
+  background: url("button_close.png") no-repeat;
+  background-size: cover;
+  border: 1px solid rgba(255,255,255,0);
+  cursor: pointer;
+}

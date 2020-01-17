@@ -1,0 +1,242 @@
+*,
+*:before,
+*:after {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body, html {
+    height: 100%;
+    color: rgb(255,255,255);
+    background-color: rgb(0,0,0);
+    overflow-y: hidden;
+
+/*  overflow:none;
+*/
+}
+
+div.scrollmenu {
+    background-color: rgb(0,0,0);
+    overflow: auto;
+    white-space: nowrap;
+    font-style: helvetica;
+}
+
+div.scrollmenu a {
+    display: inline-block;
+    color: rgb(255,255,255);
+    text-align: center;
+    padding: 14px;
+    text-decoration: none;
+}
+
+div.scrollmenu a:hover {
+    background-color: rgb(255,0,0);
+}
+
+
+/* SCROLLING PANE START */
+
+/* hide the scrollbars */
+::-webkit-scrollbar {
+    display: block;
+    color: rgb(255,255,255);
+}
+
+.head-bar {
+  color: rgb(0,0,0);
+  font-size: 15px;
+  font-family: sans-serif;
+  text-align: left;
+}
+
+.scroll-container {
+  width: 1800px;
+  white-space: nowrap;
+}
+
+.scrolling-pane {
+  display: inline-block;
+  vertical-align: top;
+  height: 100%;
+  width: 100%;
+  margin-left: -40px;
+  overflow: scroll;
+  white-space: normal
+}
+
+/* SCROLLING PANE END */
+
+.white-color {
+  background-color: rgb(0);
+  outline: 1px;
+  outline-style: solid;
+  outline-color: rgb(0,0,0);
+}
+
+.secondwhite-color {
+  background-color: rgb(0);
+  outline: 1px;
+  outline-style: solid;
+  outline-color: rgb(0,0,0);
+}
+
+.thirdwhite-color {
+  background-color: rgb(0);
+  outline: 1px;
+  outline-style: solid;
+  outline-color: rgb(0,0,0);
+}
+
+.fourthwhite-color {
+  background-color: rgb(0);
+  outline: 1px;
+  outline-style: solid;
+  outline-color: rgb(0,0,0);
+}
+
+.fifthwhite-color {
+  background-color: rgb(0);
+  outline: 1px;
+  outline-style: solid;
+  outline-color: rgb(0,0,0);
+}
+
+.sixthwhite-color {
+  background-color: rgb(0);
+  outline: 1px;
+  outline-style: solid;
+  outline-color: rgb(0,0,0);
+}
+
+.seventhwhite-color {
+  background-color: rgb(0);
+  outline: 1px;
+  outline-style: solid;
+  outline-color: rgb(0,0,0);
+}
+
+.eighthwhite-color {
+  background-color: rgb(0);
+  outline: 1px;
+  outline-style: solid;
+  outline-color: rgb(0,0,0);
+}
+
+.ninthwhite-color {
+  background-color: rgb(0);
+  outline: 1px;
+  outline-style: solid;
+  outline-color: rgb(0,0,0);
+}
+
+
+/* this is dummy content */
+.dummy-content {
+  width: 80%;
+  /* removed the fixed height. Now the div will be as long as the content
+  in it and thus the bottom-border will be below the text */
+  /* height: 500px; */
+  margin: 10px auto;
+  background-color: rgb(255);
+  border-bottom:1px solid white;
+  font-size: 12px;
+  font-family: sans-serif;
+  text-align: left;
+  padding: 10px;
+/*  text-indent: 10px;
+*/}
+
+.dummy-content img{
+  width:100%;
+
+}
+
+.text-content {
+  margin-top: 20px;
+}
+
+
+
+
+/* menu */
+ul {
+  list-style: none;
+}
+
+.menu-item {
+    background-color: black;
+    float: left;
+}
+
+.popup-item:hover {
+  cursor: pointer;
+  color: white;
+}
+
+/* specific location for the popups */
+
+#popup-glacier {
+  top: 30px;
+  left: 300px;
+}
+
+
+
+/* popup styling */
+
+.popup {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0px;
+  left: 0px;
+  display: none;
+  z-index: 1 !important;
+  font-family: 'FGroteskDemi-Regular';
+  font-size: 15px;
+}
+
+.popup img {
+  position: absolute;
+  top:4%;
+  height: 92%;
+  z-index: 20;
+  transform: translateX(-50%);
+  left: 50%;
+}
+
+.popup .bg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  opacity: 0.8;
+  z-index: 10;
+}
+
+.info {
+  width: 50%;
+}
+
+.popup h1 {
+}
+
+.popup p {
+}
+
+.popup .artwork {
+  width: 100%;
+}
+
+.close-button {
+  width: 10px;
+  height: 10px;
+  position: absolute;
+  right: 5px;
+  top: 5px;
+  background: url("button_close.png") no-repeat;
+  background-size: cover;
+  border: 1px solid rgba(255,255,255,0);
+  cursor: pointer;
+}
