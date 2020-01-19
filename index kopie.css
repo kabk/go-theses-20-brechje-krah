@@ -5,33 +5,50 @@
   box-sizing: border-box;
 }
 
+#grad {
+  background-image: linear-gradient(blue, yellow);
+}
+
 body, html {
     height: 100%;
-    color: rgb(255,255,255);
-    background-color: rgb(0,0,0);
+    width: 100%;
+    color: rgb(0);
+    background-color: rgb(255,255,255);
     overflow-y: hidden;
-
-/*  overflow:none;
-*/
 }
 
-div.scrollmenu {
-    background-color: rgb(0,0,0);
-    overflow: auto;
+pre {
+  font-family: sergio;
+  font-size: 100px;
+  text-align: left;
+  padding-left: 10px;
+  margin-left: -90px
+
+}
+
+/*
+}
+
+div.scrollmenu 1 {
+    background-color: rgb(255);
+    overflow: hidden;
     white-space: nowrap;
-    font-style: helvetica;
+    padding-top: 0px;
+    font: times;
+    position: fixed;
+    left: 700px;
 }
 
-div.scrollmenu a {
+div.scrollmenu 2 {
     display: inline-block;
-    color: rgb(255,255,255);
-    text-align: center;
-    padding: 14px;
+    color: rgb(0,0,255);
+    padding: 10px;
+    font: times;
     text-decoration: none;
 }
 
 div.scrollmenu a:hover {
-    background-color: rgb(255,0,0);
+    background-color: rgb(0,0,255);
 }
 
 
@@ -43,107 +60,99 @@ div.scrollmenu a:hover {
     color: rgb(255,255,255);
 }
 
-.head-bar {
-  color: rgb(0,0,0);
-  font-size: 15px;
-  font-family: sans-serif;
-  text-align: left;
+#headers {
+  white-space:nowrap;
 }
 
-.scroll-container {
-  width: 1800px;
+#header {
+  color: rgb(0,0,255);
+  font-size: 80px;
+  font: sergio-trial.otf;
+  text-align: center;
+  padding-left: 100px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  margin-left: 30px;
+  margin-top: 10px;
+  background-color: white;
+  border: 1px solid black;
+  border-radius: 600px;
+  border-spacing: 5px;
+  width: 550px;
+  height: 250px;
+  overflow: hidden;
+}
+
+#header2{
+  color: rgb(0,0,255);
+  position: absolute;
+  font-size: 80px;
+  font: sergio-trial.otf;
+  text-align: left;
+  padding-left: -100px;
+  padding-top: -10px;
+  padding-bottom: 5px;
+  margin-left: 950px;
+  margin-top: 320px;
+  background-color: white;
+  border: 1px solid black;
+  border-radius: 400px;
+  border-spacing: 0px;
+  width: 480px;
+  height: 150px;
+  overflow: hidden;
+}
+
+#scroll2 {
   white-space: nowrap;
 }
 
 .scrolling-pane {
   display: inline-block;
-  vertical-align: top;
-  height: 100%;
-  width: 100%;
-  margin-left: -40px;
+  /* vertical-align: top; */
+  position:absolute;
+  top:0;
+  height: 75%;
+  width: 600px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  margin-left: 900px;
+  margin-right: -40px;
+  /* margin-top: -600px; */
+  margin-bottom: 800px;
   overflow: scroll;
-  white-space: normal
+  white-space: normal;
 }
 
 /* SCROLLING PANE END */
 
 .white-color {
   background-color: rgb(0);
-  outline: 1px;
+  outline: 0px;
   outline-style: solid;
-  outline-color: rgb(0,0,0);
+  outline-color: rgb(255,255,255);
 }
 
 .secondwhite-color {
   background-color: rgb(0);
   outline: 1px;
   outline-style: solid;
-  outline-color: rgb(0,0,0);
+  outline-color: rgb(255,255,255);
 }
 
-.thirdwhite-color {
-  background-color: rgb(0);
-  outline: 1px;
-  outline-style: solid;
-  outline-color: rgb(0,0,0);
-}
-
-.fourthwhite-color {
-  background-color: rgb(0);
-  outline: 1px;
-  outline-style: solid;
-  outline-color: rgb(0,0,0);
-}
-
-.fifthwhite-color {
-  background-color: rgb(0);
-  outline: 1px;
-  outline-style: solid;
-  outline-color: rgb(0,0,0);
-}
-
-.sixthwhite-color {
-  background-color: rgb(0);
-  outline: 1px;
-  outline-style: solid;
-  outline-color: rgb(0,0,0);
-}
-
-.seventhwhite-color {
-  background-color: rgb(0);
-  outline: 1px;
-  outline-style: solid;
-  outline-color: rgb(0,0,0);
-}
-
-.eighthwhite-color {
-  background-color: rgb(0);
-  outline: 1px;
-  outline-style: solid;
-  outline-color: rgb(0,0,0);
-}
-
-.ninthwhite-color {
-  background-color: rgb(0);
-  outline: 1px;
-  outline-style: solid;
-  outline-color: rgb(0,0,0);
-}
-
-
-/* this is dummy content */
 .dummy-content {
   width: 80%;
-  /* removed the fixed height. Now the div will be as long as the content
-  in it and thus the bottom-border will be below the text */
-  /* height: 500px; */
   margin: 10px auto;
   background-color: rgb(255);
-  border-bottom:1px solid white;
-  font-size: 12px;
-  font-family: sans-serif;
+  border-bottom: 1px solid white;
+  border-top: 1px solid white;
+  border-left: 1px solid white;
+  border-right: 1px solid white;
+  font: times;
+  font-size: 14px;
+  font-family: helvetica;
   text-align: left;
-  padding: 10px;
+  padding: 15px;
 /*  text-indent: 10px;
 */}
 
@@ -156,7 +165,9 @@ div.scrollmenu a:hover {
   margin-top: 20px;
 }
 
+.audio {
 
+}
 
 
 /* menu */
@@ -229,6 +240,7 @@ ul {
   width: 100%;
 }
 
+/*
 .close-button {
   width: 10px;
   height: 10px;
