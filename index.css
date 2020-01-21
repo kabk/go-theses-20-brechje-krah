@@ -41,14 +41,14 @@ pre {
 }
 
 #header {
-        position: relative;
+    position: relative;
     color: rgb(0, 0, 255);
     font-size: 100px;
     font: 'sergio';
     text-align: center;
     padding-left: -15%;
     padding-top: 5%;
-        padding-bottom: 10%;
+    padding-bottom: 10%;
     margin-left: 5%;
     margin-top: 3%;
     background-color: white;
@@ -108,7 +108,7 @@ pre {
     background-color: rgb(255);
     font: helvetica;
     font-family: helvetica;
-    font-size: 75%;
+    font-size: 65%;
     text-align: left;
     position: relative;
     padding-left: 1%;
@@ -128,6 +128,7 @@ pre {
 
     font-family: Helvetica;
     position: fixed;
+    font-size: 85%;
     width: 83%;
     white-space: normal;
     overflow-x: scroll;
@@ -142,7 +143,7 @@ pre {
 .maintext p {
     /*    position: fixed;*/
     display: inline-block;
-    line-height: 23px;
+    line-height: 18px;
     text-align: left;
 }
 
