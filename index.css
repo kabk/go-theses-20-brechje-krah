@@ -138,6 +138,7 @@ pre {
     display: none;
     z-index: 0;
     padding-bottom: 100px;
+    padding-top: 15px;
 }
 
 .maintext p {
